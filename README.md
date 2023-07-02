@@ -1,8 +1,8 @@
-#Приветствую!
+# Приветствую!
 
-##Проект demodisgroup предназначен для показа базовых знаний о Linux и REST
+## Проект demodisgroup предназначен для показа базовых знаний о Linux и REST
 
-###Проект разделен на 2 части:
+### Проект разделен на 2 части:
 * REST API
 * MVC
 
@@ -11,10 +11,10 @@
 /mvc/person/ или /mvc/department/
 
 C REST API частью проекта можно ознакомиться отправив запрос на пути из моих тестов:
-##Работа с сущностью Department
-###GET Req
+## Работа с сущностью Department
+### GET Req
 http://localhost:8080/rest/department/
-###Resp
+### Resp
 ```json
 [
     {
@@ -43,9 +43,9 @@ http://localhost:8080/rest/department/
 ]
 ```
 
-###Get Req
+### Get Req
 http://localhost:8080/rest/department/1
-###Resp
+### Resp
 ```json
 {
     "id": 1,
@@ -57,14 +57,14 @@ http://localhost:8080/rest/department/1
 }
 ```
 
-###POST Req
+### POST Req
 http://localhost:8080/rest/department/
 ```json
 {
   "name": "HR"
 }
 ```
-###Resp
+### Resp
 ```json
 {
   "id": 6,
@@ -73,7 +73,7 @@ http://localhost:8080/rest/department/
 }
 ```
 
-###PUT Req
+### PUT Req
 http://localhost:8080/rest/department/
 ```json
 {
@@ -82,7 +82,7 @@ http://localhost:8080/rest/department/
 }
 ```
 
-###Req
+### Req
 ```json
 {
     "id": 1,
@@ -94,14 +94,14 @@ http://localhost:8080/rest/department/
 }
 ```
 
-###DELETE Req
+### DELETE Req
 http://localhost:8080/rest/department/6
-###Resp
+### Resp
 ```json
 "OK"
 ```
 ##Работа с сущностью Person
-###GET Req
+### GET Req
 http://localhost:8080/rest/person/
 ###Resp
 ```json
@@ -144,9 +144,9 @@ http://localhost:8080/rest/person/
     }
 ]
 ```
-###Get req
+### Get req
 http://localhost:8080/rest/person/1
-###Resp
+### Resp
 ```json
 {
     "id": 1,
@@ -156,7 +156,7 @@ http://localhost:8080/rest/person/1
 }
 ```
 
-###POST Req
+### POST Req
 http://localhost:8080/rest/person/
 ```json
 {
@@ -165,7 +165,7 @@ http://localhost:8080/rest/person/
     "departmentId": 1
 }
 ```
-###Resp
+### Resp
 ```json
 {
     "id": 11,
@@ -175,7 +175,7 @@ http://localhost:8080/rest/person/
 }
 ```
 
-###PUT Req
+### PUT Req
 http://localhost:8080/rest/person/
 ```json
 {
@@ -185,7 +185,7 @@ http://localhost:8080/rest/person/
     "departmentId": 2
 }
 ```
-###Resp
+### Resp
 ```json
 {
     "id": 11,
@@ -194,9 +194,9 @@ http://localhost:8080/rest/person/
     "department": 2
 }
 ```
-###DELETE Req
+### DELETE Req
 http://localhost:8080/rest/person/11
-###Resp
+### Resp
 ```json
 "OK"
 ```
