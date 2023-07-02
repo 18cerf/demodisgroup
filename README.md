@@ -11,7 +11,8 @@
 /mvc/person/ или /mvc/department/
 
 C REST API частью проекта можно ознакомиться отправив запрос на пути из моих тестов:
-## Работа с сущностью Department
+
+## Сущность Department
 ### GET Req
 http://localhost:8080/rest/department/
 ### Resp
@@ -100,10 +101,10 @@ http://localhost:8080/rest/department/6
 ```json
 "OK"
 ```
-##Работа с сущностью Person
+## Сущность Person
 ### GET Req
 http://localhost:8080/rest/person/
-###Resp
+### Resp
 ```json
 [
     {
