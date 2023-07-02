@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Update Person</title>
+</head>
+<body>
+<h1>Update Person</h1>
+<form th:object="${person}" th:action="@{/mvc/person/update/}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" th:field="*{firstname}" />
+    <br/>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" th:field="*{lastname}" />
+    <br/>
+    <label for="department">Department:</label>
+    <select id="department" th:field="*{department}">
+        <option th:each="department : ${departments}" th:value="${department.id}" th:text="${department.name}"></option>
+    </select>
+    <br/>
+    <input type="submit" value="Update" />
+</form>
+</body>
+</html>

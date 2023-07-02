@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>disgroup</title>
+    <link rel="stylesheet" th:href="@{/styles/style_main.css}"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="\static\styles\style_main.css"
+          th:href="@{/styles/style_main.css}">
+</head>
+<body>
+<h1>Hello!</h1>
+<h1>Department Details</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+    <tr th:each="department : ${departments}">
+        <td th:text="${department.id}"></td>
+        <td th:text="${department.name}"></td>
+
+        <td>
+            <a th:href="@{/mvc/department/update/{id}(id=${department.id})}">
+                <button>Update</button>
+            </a>
+        </td>
+        <td>
+            <form th:action="@{/mvc/department/delete/{id}(id=${department.id})}" method="post">
+                <input type="submit" value="Delete"/>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <form th:object="${newDepartment}" th:action="@{/mvc/department/}" method="post">
+            <td></td>
+            <td><input type="text" id="firstname" th:field="*{name}"/></td>
+            <td><input type="submit" value="Save"/></td>
+        </form>
+    </tr>
+</table>
+
+<a th:href="@{/mvc/person/}">
+    <button>Go to persons</button>
+</a>
+
+</body>
+</html>
