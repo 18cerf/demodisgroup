@@ -5,7 +5,7 @@
 ## Как деплоил на Linux:
 Ссылка на проект:
 
-[http://ec2-44-206-248-7.compute-1.amazonaws.com:8080/mvc/person/](http://44.206.248.7:8080/mvc/person/)
+http://44.206.248.7:8080/mvc/person/
 
 * Обновил пакеты всей системы
 
