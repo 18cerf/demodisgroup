@@ -45,6 +45,7 @@ public class PersonService {
     }
 
     public void delete(Long id){
+        personRepository.findById(id).get().getDepartment().removePerson(personRepository.findById(id).get());
         personRepository.deleteById(id);
     }
 
