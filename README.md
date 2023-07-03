@@ -3,36 +3,21 @@
 ## Проект demodisgroup предназначен для показа базовых знаний о Linux и REST
 
 ## Как деплоил на Linux:
+Ссылка на проект:
 
-### Обновил пакеты всей системы:
-```
-sudo apt update
-```
-### Установил пакет openjdk-17-jdk:
+http://ec2-44-206-248-7.compute-1.amazonaws.com:8080/mvc/person/
 
-```
-sudo apt install openjdk-17-jdk
-```
+### Обновил пакеты всей системы
 
-### Результат:
-```
-ubuntu@ip-172-31-87-36:~$ java -version
-openjdk version "17.0.7" 2023-04-18
-OpenJDK Runtime Environment (build 17.0.7+7-Ubuntu-0ubuntu122.04.2)
-OpenJDK 64-Bit Server VM (build 17.0.7+7-Ubuntu-0ubuntu122.04.2, mixed mode, sharing)
-ubuntu@ip-172-31-87-36:~$
-```
+### Установил пакет openjdk-17-jdk
 
-### Установил Git, результат:
-```
-ubuntu@ip-172-31-87-36:~$ git --version
-git version 2.34.1
-```
+### Установил Git, результат
 
 ### Установил PostgreSQL, создал пользователя и БД
 
 ### Склонировал репозиторий
 
+### Скачал мавен, собрал проект, запустил
 
 ### Проект разделен на 2 части:
 * REST API
