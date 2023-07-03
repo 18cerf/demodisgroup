@@ -28,7 +28,7 @@ http://44.206.248.7:8080/mvc/person/
 
 Набор тестов для сервера(можете экспортировать этот файл в postman):
 
-https://goo.su/nj9YZUI
+https://goo.su/fIX55iv
 
 ### Проект разделен на 2 части:
 * REST API
